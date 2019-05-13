@@ -25,7 +25,7 @@ public class ConsumerController {
     
     @RequestMapping("/hello")
     public ResponseEntity<String> hello() {
-       return restTemplate.getForEntity("http://localhost:8889/drjClient/hello", String.class);
+       return restTemplate.getForEntity("http://eureka-client/drjClient/hello", String.class);
     }
     
 }
